@@ -34,11 +34,12 @@ class ContaEspecial extends ContaBancaria {
   }
 }
 
-let banco = new ContaBancaria(1500, 25000, 5000);
-let conta2 = new ContaEspecial(1500, 25000, 5000);
+let banco = new ContaBancaria(1500, 25000, 1);
+let conta2 = new ContaEspecial(1500, 25000, 1);
 
 banco.deposito(500);
 banco.saque(200);
 banco.tranferenciaEntreContas(300);
+conta2.deposito(1500)
 console.log(banco);
 console.log(conta2);
